@@ -1,0 +1,96 @@
+/* General Styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Header Styles */
+header {
+    color: #ffffff;
+}
+
+header .title_n {
+    background-color: #3b4564;
+    padding: 1rem;
+}
+
+.links {
+    background-color: #020732;
+    text-align: center;
+    font-size: 18px;
+}
+
+ul li {
+    display: inline;
+    margin: 30px;
+}
+
+img {
+    width: 100px;
+    border: 2px solid black;
+    outline: #4CAF50 solid 1px;
+    border-radius: 50%;
+    float: right;
+    position: relative;
+    bottom: 100px;
+}
+
+/* Main Styles */
+main {
+    width: 100%;
+    padding: 1rem;
+}
+
+main .container {
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 3rem;
+}
+
+/* Media Queries */
+/* Screen larger than 850px */
+@media (max-width: 850px) {
+    .container {
+        grid-template-columns: repeat(2);
+        justify-content: center;
+    }
+}
+
+/* Screen larger than 900px */
+@media (min-width: 900px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.title {
+    position: relative;
+    bottom: 10px;
+    font-size: 2rem;
+    text-decoration: underline;
+    color: #00FFFF;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 110px);
+    grid-gap: 10px;
+}
+
+.btn-skill {
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+}
