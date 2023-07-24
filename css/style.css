@@ -64,6 +64,9 @@ main .container {
         grid-template-columns: repeat(2);
         justify-content: center;
     }
+    img{
+        display: none;
+    }
 }
 
 /* Screen larger than 900px */
@@ -86,11 +89,22 @@ main .container {
     grid-template-columns: repeat(6, 110px);
     grid-gap: 10px;
 }
-
+/* media */
+@media (max-width: 850px){
+    .wrapper{
+        grid-template-columns: repeat(3, 100px);
+    }
+}
 .btn-skill {
     background-color: #444;
     color: #fff;
     border-radius: 5px;
     padding: 15px;
     text-align: center;
+}
+
+.lan-items{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
 }
